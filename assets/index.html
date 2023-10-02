@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Guilherme Roque</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Guilherme Roque</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="/images/logo.png" alt="Guilherme Roque profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">G. Roque</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./images')">
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="/images/61109.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="location.href ='https://www.linkedin.com/in/guilherme-roque-/'"
+          />
+
+          <img
+            src="/images/Octicons-mark-github.svg.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="location.href ='https://github.com/weilian28'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="/images/IMG_2805.JPG"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="/images/78933.png" alt="Experience Icon" class="icon" />
+              <h3>Experience</h3>
+              <p>1 month<br />Frontend Developement</p>
+            </div>
+
+            <div class="details-container">
+              <img src="/images/pencil.png" alt="Education Icon" class="icon" />
+              <h3>Education</h3>
+              <p>
+                B.A. Translation &amp Interpreting (4 years)<br />Codecademy -
+                HTML, CSS &amp JS Courses
+              </p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              Hi, I'm Guilherme, a 20-year-old from Portugal. I'm currently a
+              4th-year student pursuing a degree in Translation and Interpreting
+              with a focus on Portuguese and Chinese languages. My passion for
+              languages has taken me on an incredible journey, including living
+              and studying in both China and Japan. I'm fluent in several
+              languages, including Portuguese, English, Chinese, French, and
+              Spanish. Recently, I've embarked on a new adventure – learning the
+              language of computers! Over the past few weeks, I've been diving
+              into the world of frontend web development, and this portfolio
+              website you're visiting right now is my very first project. Thanks
+              for stopping by and getting to know me a bit better!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/images/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Developement</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="/images/html5-logo-9.png"
+                  alt="checkmark-png"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/images/CSS3_logo.svg.png"
+                  alt="checkmark-png"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/images/javascript-logo-transparent-logo-javascript-images-3.png"
+                  alt="checkmark-png"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">UI/UX Design</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="/images/Adobe-Photoshop-Logo.png"
+                  alt="checkmark-png"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photoshop</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <img
+            src="/images/arrow.png"
+            alt="Arrow Icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Take a Look At My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="/images/360_F_514758236_i8rnB85PVdEaK19yGaK0TpaYEYMyxOL5.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Project 1 (Not Ready Yet)
+            </h2>
+            <div class="button-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/weilian28'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/weilian28'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="/images/360_F_514758236_i8rnB85PVdEaK19yGaK0TpaYEYMyxOL5.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Project 2 (Not Ready Yet)
+            </h2>
+            <div class="button-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/weilian28'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/weilian28'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="/images/360_F_514758236_i8rnB85PVdEaK19yGaK0TpaYEYMyxOL5.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Project 3 (Not Ready Yet)
+            </h2>
+            <div class="button-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/weilian28'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/weilian28'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/images/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="/images/email-icon--clipart-best-22.png"
+            alt="Email Icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="mailto:guilhermeroque444@gmail.com"
+              >guilhermeroque444@gmail.com
+            </a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="/images/61109.png"
+            alt="LinkedIn Icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/guilherme-roque-/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Guilherme Roque. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
